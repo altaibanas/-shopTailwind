@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - متجر المستقبل</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- شريط التنقل -->
+    <header class="sticky top-0 z-50 glass-effect shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl">
+                        م
+                    </div>
+                    <span class="mr-2 text-xl font-bold text-gradient">متجر المستقبل</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-6 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">الرئيسية</a>
+                    <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">عن المتجر</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">المتجر</a>
+                    <a href="blog.html" class="text-indigo-600 font-medium transition-colors duration-300">المدونة</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">تواصل معنا</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-search text-gray-600"></i>
+                    </button>
+                    <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-shopping-cart text-gray-600"></i>
+                    </button>
+                    <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-user text-gray-600"></i>
+                    </button>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-bars text-gray-600"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- قائمة الجوال -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2 border-t border-gray-200 pt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">الرئيسية</a>
+                    <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">عن المتجر</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">المتجر</a>
+                    <a href="blog.html" class="text-indigo-600 font-medium transition-colors duration-300 py-2">المدونة</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- رأس الصفحة -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">مدونة متجر المستقبل</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90">أحدث المقالات والنصائح حول المنتجات والتقنيات وأساليب التسوق الذكية</p>
+        </div>
+    </section>
+
+    <!-- قسم المقالات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- المحتوى الرئيسي -->
+                <div class="lg:w-2/3">
+                    <!-- مقال متميز -->
+                    <div class="bg-gray-50 rounded-2xl overflow-hidden mb-12 blog-card">
+                        <div class="md:flex">
+                            <div class="md:w-2/5 h-64 md:h-auto bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center">
+                                <i class="fas fa-star text-white text-6xl"></i>
+                            </div>
+                            <div class="md:w-3/5 p-6">
+                                <span class="inline-block bg-indigo-100 text-indigo-600 text-xs font-bold px-3 py-1 rounded-full mb-4">متميز</span>
+                                <h2 class="text-2xl font-bold mb-3 text-gray-800">أفضل الأجهزة الإلكترونية في 2023</h2>
+                                <p class="text-gray-600 mb-4">استعرض معنا أحدث الأجهزة الإلكترونية التي ستغير طريقة عملك وتواصلك وترفيهك في العام الحالي.</p>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <i class="fas fa-calendar ml-2"></i>
+                                    <span>15 مايو 2023</span>
+                                    <i class="fas fa-user ml-4 mr-2"></i>
+                                    <span>أحمد محمد</span>
+                                </div>
+                                <a href="#" class="inline-block mt-4 text-indigo-600 font-medium hover:text-indigo-800 transition-colors duration-300">
+                                    اقرأ المزيد <i class="fas fa-arrow-left mr-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- قائمة المقالات -->
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">أحدث المقالات</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- مقال 1 -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm blog-card">
+                            <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-white text-5xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-3 text-gray-800">كيف تختار الهاتف الذكي المناسب</h3>
+                                <p class="text-gray-600 mb-4">دليل شامل لاختيار الهاتف الذكي الذي يناسب احتياجاتك وميزانيتك.</p>
+                                <div class="flex items-center text-gray-500 text-sm mb-4">
+                                    <i class="fas fa-calendar ml-2"></i>
+                                    <span>10 مايو 2023</span>
+                                    <i class="fas fa-user ml-4 mr-2"></i>
+                                    <span>فاطمة عبدالله</span>
+                                </div>
+                                <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition-colors duration-300">
+                                    اقرأ المزيد <i class="fas fa-arrow-left mr-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- مقال 2 -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm blog-card">
+                            <div class="h-48 bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center">
+                                <i class="fas fa-laptop text-white text-5xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-3 text-gray-800">نصائح للحفاظ على جهاز اللابتوب</h3>
+                                <p class="text-gray-600 mb-4">تعرف على أفضل الممارسات لإطالة عمر جهاز اللابتوب وتحسين أدائه.</p>
+                                <div class="flex items-center text-gray-500 text-sm mb-4">
+                                    <i class="fas fa-calendar ml-2"></i>
+                                    <span>5 مايو 2023</span>
+                                    <i class="fas fa-user ml-4 mr-2"></i>
+                                    <span>خالد إبراهيم</span>
+                                </div>
+                                <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition-colors duration-300">
+                                    اقرأ المزيد <i class="fas fa-arrow-left mr-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- مقال 3 -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm blog-card">
+                            <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center">
+                                <i class="fas fa-headphones text-white text-5xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-3 text-gray-800">مقارنة بين أفضل السماعات اللاسلكية</h3>
+                                <p class="text-gray-600 mb-4">استعراض لأفضل السماعات اللاسلكية في السوق ومميزات كل منها.</p>
+                                <div class="flex items-center text-gray-500 text-sm mb-4">
+                                    <i class="fas fa-calendar ml-2"></i>
+                                    <span>28 أبريل 2023</span>
+                                    <i class="fas fa-user ml-4 mr-2"></i>
+                                    <span>سارة سالم</span>
+                                </div>
+                                <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition-colors duration-300">
+                                    اقرأ المزيد <i class="fas fa-arrow-left mr-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- مقال 4 -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm blog-card">
+                            <div class="h-48 bg-gradient-to-r from-blue-400 to-cyan-500 flex items-center justify-center">
+                                <i class="fas fa-tablet-alt text-white text-5xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-3 text-gray-800">استخدام التابلت في العمل والتعلم</h3>
+                                <p class="text-gray-600 mb-4">كيف يمكن الاستفادة من الأجهزة اللوحية في زيادة الإنتاجية في العمل والتعلم.</p>
+                                <div class="flex items-center text-gray-500 text-sm mb-4">
+                                    <i class="fas fa-calendar ml-2"></i>
+                                    <span>20 أبريل 2023</span>
+                                    <i class="fas fa-user ml-4 mr-2"></i>
+                                    <span>أحمد محمد</span>
+                                </div>
+                                <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition-colors duration-300">
+                                    اقرأ المزيد <i class="fas fa-arrow-left mr-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ترقيم الصفحات -->
+                    <div class="flex justify-center mt-12">
+                        <nav class="flex items-center space-x-2 space-x-reverse">
+                            <a href="#" class="px-4 py-2 bg-indigo-600 text-white rounded-lg">1</a>
+                            <a href="#" class="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100">2</a>
+                            <a href="#" class="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100">3</a>
+                            <a href="#" class="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100">4</a>
+                            <a href="#" class="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100">التالي</a>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- الشريط الجانبي -->
+                <div class="lg:w-1/3">
+                    <!-- بحث -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm mb-6">
+                        <h3 class="font-bold text-lg mb-4 text-gray-800">بحث في المدونة</h3>
+                        <div class="flex">
+                            <input type="text" placeholder="ابحث عن مقال..." class="flex-grow border border-gray-300 rounded-r-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded-l-lg hover:bg-indigo-700 transition-colors duration-300">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- الفئات -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm mb-6">
+                        <h3 class="font-bold text-lg mb-4 text-gray-800">الفئات</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                                    <span>الهواتف الذكية</span>
+                                    <span class="bg-gray-100 text-gray-500 text-xs font-bold px-2 py-1 rounded-full">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                                    <span>اللابتوبات</span>
+                                    <span class="bg-gray-100 text-gray-500 text-xs font-bold px-2 py-1 rounded-full">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                                    <span>الأجهزة اللوحية</span>
+                                    <span class="bg-gray-100 text-gray-500 text-xs font-bold px-2 py-1 rounded-full">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                                    <span>السماعات</span>
+                                    <span class="bg-gray-100 text-gray-500 text-xs font-bold px-2 py-1 rounded-full">7</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex justify-between text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                                    <span>الساعات الذكية</span>
+                                    <span class="bg-gray-100 text-gray-500 text-xs font-bold px-2 py-1 rounded-full">4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- المقالات الأكثر مشاهدة -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm">
+                        <h3 class="font-bold text-lg mb-4 text-gray-800">الأكثر مشاهدة</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex-shrink-0 flex items-center justify-center mr-4">
+                                    <i class="fas fa-mobile-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">كيف تختار الهاتف الذكي المناسب</h4>
+                                    <div class="flex items-center text-gray-500 text-xs">
+                                        <i class="fas fa-eye ml-1"></i>
+                                        <span>1,245 مشاهدة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg flex-shrink-0 flex items-center justify-center mr-4">
+                                    <i class="fas fa-laptop text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">نصائح للحفاظ على جهاز اللابتوب</h4>
+                                    <div class="flex items-center text-gray-500 text-xs">
+                                        <i class="fas fa-eye ml-1"></i>
+                                        <span>987 مشاهدة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg flex-shrink-0 flex items-center justify-center mr-4">
+                                    <i class="fas fa-headphones text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">مقارنة بين أفضل السماعات اللاسلكية</h4>
+                                    <div class="flex items-center text-gray-500 text-xs">
+                                        <i class="fas fa-eye ml-1"></i>
+                                        <span>756 مشاهدة</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم النشرة البريدية -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">اشترك في نشرتنا البريدية</h2>
+            <p class="mb-8 max-w-2xl mx-auto opacity-90">احصل على أحدث المقالات والنصائح حول المنتجات والتقنيات مباشرة إلى بريدك الإلكتروني</p>
+            
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="بريدك الإلكتروني" class="flex-grow px-4 py-3 rounded-r-lg text-gray-800 focus:outline-none">
+                <button class="bg-indigo-800 text-white px-6 py-3 rounded-l-lg font-medium hover:bg-indigo-900 transition-colors duration-300">
+                    اشتراك
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl">
+                            م
+                        </div>
+                        <span class="mr-2 text-xl font-bold">متجر المستقبل</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">متجرك الإلكتروني الموثوق لأحدث المنتجات والتقنيات بأسعار تنافسية وجودة عالية.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">عن المتجر</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition-colors duration-300">المتجر</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">فئات المنتجات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الإلكترونيات</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الأجهزة المنزلية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">ملابس</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الإكسسوارات</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">ألعاب</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">معلومات الاتصال</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 ml-2 text-indigo-400"></i>
+                            <span>المملكة العربية السعودية، الرياض</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 ml-2 text-indigo-400"></i>
+                            <span>+966 123 456 789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 ml-2 text-indigo-400"></i>
+                            <span>info@future-store.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 متجر المستقبل. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

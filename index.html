@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر المستقبل - الرئيسية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- شريط التنقل -->
+    <header class="sticky top-0 z-50 glass-effect shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl">
+                        م
+                    </div>
+                    <span class="mr-2 text-xl font-bold text-gradient">متجر المستقبل</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-6 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">الرئيسية</a>
+                    <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">عن المتجر</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">المتجر</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">المدونة</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">تواصل معنا</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-search text-gray-600"></i>
+                    </button>
+                    <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-shopping-cart text-gray-600"></i>
+                    </button>
+                    <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-user text-gray-600"></i>
+                    </button>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                        <i class="fas fa-bars text-gray-600"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- قائمة الجوال -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2 border-t border-gray-200 pt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">الرئيسية</a>
+                    <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">عن المتجر</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">المتجر</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">المدونة</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300 py-2">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">متجر المستقبل بين يديك</h1>
+                    <p class="text-lg md:text-xl mb-6 opacity-90">تجربة تسوق فريدة مع أحدث المنتجات والتقنيات</p>
+                    <div class="flex justify-center md:justify-start space-x-4 space-x-reverse">
+                        <button class="bg-white text-indigo-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300 hover-lift">
+                            تسوق الآن
+                        </button>
+                        <button class="border-2 border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-indigo-600 transition-all duration-300 hover-lift">
+                            تعرف أكثر
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-80 h-80 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <div class="absolute w-64 h-64 bg-white/30 rounded-full"></div>
+                        <div class="absolute w-48 h-48 bg-white/40 rounded-full"></div>
+                        <div class="absolute w-32 h-32 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-shopping-bag text-indigo-600 text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">لماذا تختار متجرنا؟</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-2xl text-center hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shipping-fast text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">شحن سريع</h3>
+                    <p class="text-gray-600">نوفر خدمة الشحن السريع إلى جميع أنحاء المملكة خلال 24-48 ساعة</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-2xl text-center hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">دفع آمن</h3>
+                    <p class="text-gray-600">أنظمة دفع آمنة ومشفرة لحماية معلوماتك وبياناتك المالية</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-2xl text-center hover-lift">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">دعم فني</h3>
+                    <p class="text-gray-600">فريق دعم فني متاح على مدار الساعة لمساعدتك في أي استفسار</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات المميزة -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">منتجاتنا المميزة</h2>
+                <a href="shop.html" class="text-indigo-600 font-medium flex items-center">
+                    عرض الكل
+                    <i class="fas fa-arrow-left mr-2"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- المنتج 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center">
+                        <i class="fas fa-laptop text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 text-gray-800">لابتوب فائق السرعة</h3>
+                        <p class="text-gray-600 text-sm mb-4">أحدث تقنيات المعالجة مع شاشة عالية الدقة</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-600 font-bold">2,499 ر.س</span>
+                            <button class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm hover:bg-indigo-200 transition-colors duration-300">
+                                <i class="fas fa-cart-plus mr-1"></i>
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المنتج 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 text-gray-800">هاتف ذكي متطور</h3>
+                        <p class="text-gray-600 text-sm mb-4">كاميرا احترافية وبطارية تدوم طويلاً</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-600 font-bold">1,899 ر.س</span>
+                            <button class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm hover:bg-indigo-200 transition-colors duration-300">
+                                <i class="fas fa-cart-plus mr-1"></i>
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المنتج 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="h-48 bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center">
+                        <i class="fas fa-headphones text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 text-gray-800">سماعات لاسلكية</h3>
+                        <p class="text-gray-600 text-sm mb-4">جودة صوت استثنائية وتصميم مريح</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-600 font-bold">499 ر.س</span>
+                            <button class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm hover:bg-indigo-200 transition-colors duration-300">
+                                <i class="fas fa-cart-plus mr-1"></i>
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المنتج 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-smartwatch text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2 text-gray-800">ساعة ذكية</h3>
+                        <p class="text-gray-600 text-sm mb-4">تتبع الصحة واللياقة بتقنيات متطورة</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-600 font-bold">799 ر.س</span>
+                            <button class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm hover:bg-indigo-200 transition-colors duration-300">
+                                <i class="fas fa-cart-plus mr-1"></i>
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">50,000+</div>
+                    <div class="text-gray-600">عميل راضٍ</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-500 mb-2">10,000+</div>
+                    <div class="text-gray-600">منتج متوفر</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">5,000+</div>
+                    <div class="text-gray-600">طلب شهرياً</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-purple-500 mb-2">98%</div>
+                    <div class="text-gray-600">عملاء سعداء</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم النشرة البريدية -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">اشترك في نشرتنا البريدية</h2>
+            <p class="mb-8 max-w-2xl mx-auto opacity-90">احصل على آخر العروض والتخفيضات وأحدث المنتجات مباشرة إلى بريدك الإلكتروني</p>
+            
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="بريدك الإلكتروني" class="flex-grow px-4 py-3 rounded-r-lg text-gray-800 focus:outline-none">
+                <button class="bg-indigo-800 text-white px-6 py-3 rounded-l-lg font-medium hover:bg-indigo-900 transition-colors duration-300">
+                    اشتراك
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl">
+                            م
+                        </div>
+                        <span class="mr-2 text-xl font-bold">متجر المستقبل</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">متجرك الإلكتروني الموثوق لأحدث المنتجات والتقنيات بأسعار تنافسية وجودة عالية.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">عن المتجر</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition-colors duration-300">المتجر</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">فئات المنتجات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الإلكترونيات</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الأجهزة المنزلية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">ملابس</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">الإكسسوارات</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">ألعاب</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">معلومات الاتصال</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 ml-2 text-indigo-400"></i>
+                            <span>المملكة العربية السعودية، الرياض</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 ml-2 text-indigo-400"></i>
+                            <span>+966 123 456 789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 ml-2 text-indigo-400"></i>
+                            <span>info@future-store.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 متجر المستقبل. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>    
+</body>
+</html>
